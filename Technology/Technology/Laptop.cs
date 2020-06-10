@@ -4,7 +4,7 @@ using System.Text;
 
 namespace Technology
 {
-    class Laptop : Computer
+    public class Laptop : Computer
     {
         public double TotalBatteryLifeInHours { get; set; }
         public double RemainingBatteryLife { get; set; }
@@ -37,7 +37,7 @@ namespace Technology
 
         public void Charge(double hours)
         {
-            RemainingBatteryLife += 1.5 * hours;
+            RemainingBatteryLife += 2 * hours;
             if (RemainingBatteryLife > TotalBatteryLifeInHours)
             {
                 RemainingBatteryLife = TotalBatteryLifeInHours;

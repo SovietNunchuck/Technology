@@ -1634,6 +1634,16 @@
         "runtime": {
           "lib/netstandard1.3/System.Xml.XDocument.dll": {}
         }
+      },
+      "Technology/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v3.1",
+        "compile": {
+          "bin/placeholder/Technology.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Technology.dll": {}
+        }
       }
     }
   },
@@ -5705,6 +5715,11 @@
         "system.xml.xdocument.4.3.0.nupkg.sha512",
         "system.xml.xdocument.nuspec"
       ]
+    },
+    "Technology/1.0.0": {
+      "type": "project",
+      "path": "../Technology/Technology.csproj",
+      "msbuildProject": "../Technology/Technology.csproj"
     }
   },
   "projectFileDependencyGroups": {
@@ -5712,6 +5727,7 @@
       "MSTest.TestAdapter >= 2.1.0",
       "MSTest.TestFramework >= 2.1.0",
       "Microsoft.NET.Test.Sdk >= 16.5.0",
+      "Technology >= 1.0.0",
       "coverlet.collector >= 1.2.0"
     ]
   },
@@ -5740,7 +5756,11 @@
       },
       "frameworks": {
         "netcoreapp3.1": {
-          "projectReferences": {}
+          "projectReferences": {
+            "D:\\LC_Classwork\\C# Projects\\Chapter 7 Exercises\\Technology\\Technology\\Technology.csproj": {
+              "projectPath": "D:\\LC_Classwork\\C# Projects\\Chapter 7 Exercises\\Technology\\Technology\\Technology.csproj"
+            }
+          }
         }
       },
       "warningProperties": {

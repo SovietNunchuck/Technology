@@ -4,8 +4,26 @@ using System.Text;
 
 namespace Technology
 {
-    class SmartPhone : Computer
+    public class SmartPhone : Computer
     {
-
+        public List<string> Applications { get; set; } = new List<string> { "App Store", "Messages", "Phone", "Calculator"};
+        
+        public string SMS(string message, string recipient)
+        {
+            Console.WriteLine($"Are you sure you want to send '{message}' to {recipient}?\n(y/n)");
+            string confirmation = Console.ReadLine();
+            if (confirmation == "y")
+            {
+                return "Message sent.";
+            }
+            else if (confirmation == "n")
+            {
+                return "Message terminated.";
+            }
+            else
+            {
+                return "Invalid input.";
+            }
+        }
     }
 }

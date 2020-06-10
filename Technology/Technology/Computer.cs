@@ -4,9 +4,9 @@ using System.Text;
 
 namespace Technology
 {
-    class Computer
+    public class Computer : AbstractEntity
     {
-        public readonly string Manufacturer;
+        public string Manufacturer { get; }
         public string OperatingSystem { get; set; }
         public int StorageSpaceInGigabytes { get; set; }
         public int RandomAccessMemoryInGigabytes { get; set; }

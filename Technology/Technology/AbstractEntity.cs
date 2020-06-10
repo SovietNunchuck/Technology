@@ -4,7 +4,15 @@ using System.Text;
 
 namespace Technology
 {
-    class AbstractEntity
+    public abstract class AbstractEntity
     {
+        public int DeviceID { get; }
+        private static int classCreationCounter = 1;
+
+        public AbstractEntity()
+        {
+            DeviceID = classCreationCounter;
+            classCreationCounter++;
+        }
     }
 }
