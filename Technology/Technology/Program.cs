@@ -6,7 +6,14 @@ namespace Technology
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            //Computer newPC = new Computer();
+            //Console.WriteLine($"Powered on: {newPC.PoweredOnStatus.ToString()}");
+            //newPC.PowerOn();
+            //Console.WriteLine($"Powered on: {newPC.PoweredOnStatus.ToString()}");
+
+            //Console.WriteLine(newPC.Manufacturer);
+
+
         }
     }
 }
